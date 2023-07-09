@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-button.css" />
+    <title>Honorarios</title>
+  </head>
+  <body>
+    <header>
+      <p id="espacio-header">ESPACIO ENCABEZADO</p>
+    </header>
+
+    <main>
+      <section>
+        <div id="contenedor-datos">
+          <input
+            class="input-datos"
+            type="number"
+            name="root"
+            value=""
+            placeholder="Cédula"
+          />
+          <input
+            class="input-datos"
+            type="text"
+            name="nombre"
+            value=""
+            placeholder="Nombre completo"
+          />
+          <input
+            class="input-datos"
+            type="date"
+            name="fecha"
+            value=""
+            placeholder="Fecha"
+          />
+        </div>
+      </section>
+
+      <section id="contenedor-tg-madre">
+        <div id="contenedor-tratamientos">
+          <div id="titulo-tratamientos">
+            <h1>Dictamen</h1>
+          </div>
+          <div class="campos">
+            <p class="campo-consulta" value="">
+              Consulta <span value="">$20</span>
+            </p>
+            <img class="icono" src="/resources/sum.png" alt="Agregar" />
+          </div>
+
+          <div class="campos">
+            <p class="campo-consulta" value="">
+              Radiografía <span value="">$35</span>
+            </p>
+            <img class="icono" src="/resources/sum.png" alt="Agregar" />
+          </div>
+
+          <div class="campos">
+            <p class="campo-consulta" value="">
+              Limpieza <span value="">$30</span>
+            </p>
+            <img class="icono" src="/resources/sum.png" alt="Agregar" />
+          </div>
+        </div>
+
+        <div id="contenedor-ganancias-madre">
+          <div id="contenedor-ganancias-hijo">
+            <label id="label-total" for="#">Total $</label>
+            <p id="campo-ganancias" name="total">yi</p>
+          </div>
+          <button>
+            <span class="transition"></span>
+            <span class="gradient"></span>
+            <span class="label">Enviar</span>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
