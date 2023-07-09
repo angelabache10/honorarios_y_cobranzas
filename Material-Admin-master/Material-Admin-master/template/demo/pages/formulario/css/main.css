@@ -173,8 +173,15 @@ iframe {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
   padding: 20px;
+}
+
+#h1-titulo {
+  font-size: 30px;
+  font-family: Poppins-Regular;
 }
 
 .contenedor-divisor {
@@ -280,7 +287,11 @@ label {
 /*------------------------------------------------------------------
 [  ]*/
 .login100-form {
-  width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .login100-form-title {
