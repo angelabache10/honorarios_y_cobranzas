@@ -128,6 +128,11 @@ svg.mdc-button__icon {
   margin-right: -4px;
 }
 
+#titulo-grid {
+  padding-left: 25px;
+  font-size: 40px;
+}
+
 [dir="rtl"] .mdc-button--raised .mdc-button__label + .mdc-button__icon, .mdc-button--raised .mdc-button__label + .mdc-button__icon[dir="rtl"], [dir="rtl"]
 .mdc-button--unelevated .mdc-button__label + .mdc-button__icon,
 .mdc-button--unelevated .mdc-button__label + .mdc-button__icon[dir="rtl"], [dir="rtl"]
