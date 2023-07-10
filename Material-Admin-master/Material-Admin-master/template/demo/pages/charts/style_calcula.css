@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url();
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+header {
+  background-color: #222;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 549px;
+  width: 100%;
+  background-color: white;
+}
+
+#espacio-header {
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat";
+}
+
+#contenedor-datos {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-datos {
+  height: 35px;
+  width: 300px;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  padding: 15px;
+}
+
+#contenedor-tg-madre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contenedor-tratamientos {
+  height: 300px;
+  width: 800px;
+  background-color: #e5e5e5;
+  border-radius: 35px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+#titulo-tratamientos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+
+.campos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.campo-consulta {
+  height: 35px;
+  width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  padding: 10px;
+  text-align: end;
+}
+
+.icono {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#contenedor-ganancias-madre {
+  height: 300px;
+  width: 400px;
+  background-color: #e5e5e5;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#contenedor-ganancias-hijo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+
+#label-total {
+  font-family: "Montserrat";
+  padding-left: 5px;
+}
+
+#campo-ganancias {
+  height: 35px;
+  width: 300px;
+  background-color: white;
+  font-family: "Montserrat";
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

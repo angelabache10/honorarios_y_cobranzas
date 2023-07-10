@@ -14,6 +14,8 @@
       rel="stylesheet"
       href="../../../assets/vendors/css/vendor.bundle.base.css"
     />
+    <link rel="stylesheet" href="style_calcula.css" />
+    <link rel="stylesheet" href="style-button.css" />
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -121,7 +123,6 @@
                     aria-hidden="true"
                     >pie_chart_outlined</i
                   >
-                  Charts
                 </a>
               </div>
               <div class="mdc-list-item mdc-drawer-item">
@@ -548,94 +549,81 @@
           </div>
         </header>
         <!-- partial -->
-        <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <div>
           <main class="content-wrapper">
             <div class="mdc-layout-grid">
+              <h1 id="h1-titulo">Honorarios / Calculadora de Tratamientos</h1>
               <div class="mdc-layout-grid__inner">
-                <div
-                  class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
-                >
-                  <div class="mdc-card">
-                    <h6 class="card-title">Line chart</h6>
-                    <canvas id="lineChart"></canvas>
-                  </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-4-tablet">
+
                 </div>
-                <div
-                  class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
-                >
-                  <div class="mdc-card">
-                    <h6 class="card-title">Bar chart</h6>
-                    <canvas id="barChart"></canvas>
+                <section>
+                  <div id="contenedor-datos">
+                    <input
+                      class="input-datos"
+                      type="number"
+                      name="root"
+                      value=""
+                      placeholder="Cédula"
+                    />
+                    <input
+                      class="input-datos"
+                      type="text"
+                      name="nombre"
+                      value=""
+                      placeholder="Nombre completo"
+                    />
+                    <input
+                      class="input-datos"
+                      type="date"
+                      name="fecha"
+                      value=""
+                      placeholder="Fecha"
+                    />
                   </div>
-                </div>
-                <div
-                  class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
-                >
-                  <div class="mdc-card">
-                    <h6 class="card-title">Area chart</h6>
-                    <canvas id="areaChart"></canvas>
+                </section>
+        
+                <section id="contenedor-tg-madre">
+                  <div id="contenedor-tratamientos">
+                    <div class="titulo-tratamientos mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet></div>">
+                      <h1>Dictamen</h1>
+                    </div>
+                    <div class="campos">
+                      <p class="campo-consulta" value="">
+                        Consulta <span value="">$20</span>
+                      </p>
+                      <img class="icono" src="/resources/sum.png" alt="Agregar" />
+                    </div>
+        
+                    <div class="campos">
+                      <p class="campo-consulta" value="">
+                        Radiografía <span value="">$35</span>
+                      </p>
+                      <img class="icono" src="/resources/sum.png" alt="Agregar" />
+                    </div>
+        
+                    <div class="campos">
+                      <p class="campo-consulta" value="">
+                        Limpieza <span value="">$30</span>
+                      </p>
+                      <img class="icono" src="/resources/sum.png" alt="Agregar" />
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
-                >
-                  <div class="mdc-card">
-                    <h6 class="card-title">Doughnut chart</h6>
-                    <canvas id="doughnutChart"></canvas>
-                  </div>
-                </div>
-                <div
-                  class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
-                >
-                  <div class="mdc-card">
-                    <h6 class="card-title">Pie chart</h6>
-                    <canvas id="pieChart"></canvas>
-                  </div>
-                </div>
-                <div
-                  class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
-                >
-                  <div class="mdc-card">
-                    <h6 class="card-title">Scatter chart</h6>
-                    <canvas id="scatterChart"></canvas>
+        
+                  <div id="contenedor-ganancias-madre">
+                    <div id="contenedor-ganancias-hijo">
+                      <label id="label-total" for="#">Total $</label>
+                      <p id="campo-ganancias" name="total">yi</p>
+                    </div>
+                    <button class="login100-form-btn">
+                      <span>Enviar</span>
+                    </button>
                   </div>
                 </div>
               </div>
-            </div>
           </main>
-          <!-- partial:../../partials/_footer.html -->
-          <footer>
-            <div class="mdc-layout-grid">
-              <div class="mdc-layout-grid__inner">
-                <div
-                  class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop"
-                >
-                  <span
-                    class="text-center text-sm-left d-block d-sm-inline-block tx-14"
-                    >Copyright ©
-                    <a href="https://www.bootstrapdash.com/" target="_blank"
-                      >bootstrapdash.com </a
-                    >2020</span
-                  >
-                </div>
-                <div
-                  class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop d-flex justify-content-end"
-                >
-                  <span
-                    class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center tx-14"
-                    >Free
-                    <a
-                      href="https://www.bootstrapdash.com/material-design-dashboard/"
-                      target="_blank"
-                    >
-                      material admin
-                    </a>
-                    dashboards from Bootstrapdash.com</span
-                  >
-                </div>
-              </div>
-            </div>
-          </footer>
+          
+
           <!-- partial -->
         </div>
       </div>
