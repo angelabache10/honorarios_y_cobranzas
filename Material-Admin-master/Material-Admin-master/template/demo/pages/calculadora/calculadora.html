@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/Material-Admin-master/Material-Admin-master/template/demo/pages/calculadora/style.css" />
     <title>Material Dash</title>
     <!-- plugins:css -->
     <link
@@ -116,13 +117,14 @@
               <div class="mdc-list-item mdc-drawer-item">
                 <a
                   class="mdc-drawer-link"
-                  href="../../pages/charts/chartjs.html"
+                  href="../../pages/calculadora/calculadora.html"
                 >
                   <i
                     class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon"
                     aria-hidden="true"
                     >pie_chart_outlined</i
                   >
+                  Calculadora
                 </a>
               </div>
               <div class="mdc-list-item mdc-drawer-item">
@@ -553,10 +555,6 @@
           <main class="content-wrapper">
             <div class="mdc-layout-grid">
               <h1 id="h1-titulo">Honorarios / Calculadora de Tratamientos</h1>
-              <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-4-tablet">
-
-                </div>
                 <section>
                   <div id="contenedor-datos">
                     <input
@@ -592,31 +590,31 @@
                       <p class="campo-consulta" value="">
                         Consulta <span value="">$20</span>
                       </p>
-                      <img class="icono" src="/resources/sum.png" alt="Agregar" />
+                      <img class="icono" src="/Material-Admin-master/Material-Admin-master/template/demo/pages/calculadora/resources/sum.png" alt="Agregar" />
                     </div>
         
                     <div class="campos">
                       <p class="campo-consulta" value="">
                         Radiografía <span value="">$35</span>
                       </p>
-                      <img class="icono" src="/resources/sum.png" alt="Agregar" />
+                      <img class="icono" src="/Material-Admin-master/Material-Admin-master/template/demo/pages/calculadora/resources/sum.png" alt="Agregar" />
                     </div>
         
                     <div class="campos">
                       <p class="campo-consulta" value="">
                         Limpieza <span value="">$30</span>
                       </p>
-                      <img class="icono" src="/resources/sum.png" alt="Agregar" />
+                      <img class="icono" src="/Material-Admin-master/Material-Admin-master/template/demo/pages/calculadora/resources/sum.png" alt="Agregar" />
                     </div>
                   </div>
         
                   <div id="contenedor-ganancias-madre">
                     <div id="contenedor-ganancias-hijo">
-                      <label id="label-total" for="#">Total $</label>
-                      <p id="campo-ganancias" name="total">yi</p>
+                      <label id="label-total" for="#">Total de ganancias por porcentaje</label>
+                      <p id="campo-ganancias" name="total"></p>
                     </div>
-                    <button class="login100-form-btn">
-                      <span>Enviar</span>
+                    <button id="boton-enviar">
+                      Enviar
                     </button>
                   </div>
                 </div>
